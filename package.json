@@ -1,0 +1,26 @@
+{
+  "name": "monaco-plugin-helpers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/main",
+  "dependencies": {
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.7"
+  },
+  "scripts": {
+    "compile": "tsc -p ./src",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandrudima/monaco-plugin-helpers.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexandrudima/monaco-plugin-helpers/issues"
+  },
+  "homepage": "https://github.com/alexandrudima/monaco-plugin-helpers#readme"
+}
