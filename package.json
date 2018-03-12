@@ -13,6 +13,10 @@
     "compile": "tsc -p ./src",
     "prepublish": "npm run compile"
   },
+  "bin": {
+    "mcopy": "./bin/mcopy",
+    "mrmdir": "./bin/mrmdir"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexandrudima/monaco-plugin-helpers.git"
