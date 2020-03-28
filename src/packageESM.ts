@@ -166,11 +166,8 @@ function findNodeModuleImport(repoRoot: string, module: string, sourceFilePath: 
 	}
 
 	let modulePackage = JSON.parse(fs.readFileSync(modulePackagePath).toString());
-	if (typeof modulePackage.module !== 'string') {
-		throw new Error(`Missing property 'module' package.json at ${modulePackagePath}`);
-	}
-
-	let result = path.join(modulePath, modulePackage.module);
+	let moduleEntryPath = modulePackage.module || modulePackage.main || "index.js";
+	let result = path.join(modulePath, moduleEntryPath);
 	if (!fs.existsSync(result)) {
 		throw new Error(`Missing file ${result}`);
 	}
