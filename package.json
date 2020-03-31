@@ -11,7 +11,7 @@
   },
   "scripts": {
     "compile": "tsc -p ./src",
-    "prepublish": "npm run compile"
+    "prepublishOnly": "npm run compile"
   },
   "bin": {
     "mcopy": "./bin/mcopy",
